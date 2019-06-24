@@ -1,0 +1,17 @@
+{
+    "env": {
+        "production": {
+          "plugins": ["emotion"]
+        },
+        "development": {
+          "plugins": [["emotion", { "sourceMap": true }]]
+        }
+      },
+    "plugins": ["react-hot-loader/babel",  ["module-resolver", {        
+        "root": ["./src"],
+        "alias": {          
+          "lib": "./src/lib",          
+        }
+      }]],
+    "presets": ["@babel/preset-env", "@babel/preset-react"]
+  }
